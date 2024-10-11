@@ -2,13 +2,14 @@ package academy.devdojo.maratonajava.javacore.Kenum.dominio;
 
 public class Cliente {
 
+
     private String nome;
-    private TipoCliente tipoCliente;
+    private TipoPessoa tipoPessoa;
     private TipoPagamento tipoPagamento;
 
-    public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
+    public Cliente(String nome, TipoPessoa tipoPessoa, TipoPagamento tipoPagamento) {
         this.nome = nome;
-        this.tipoCliente = tipoCliente;
+        this.tipoPessoa = tipoPessoa;
         this.tipoPagamento = tipoPagamento;
     }
 
@@ -16,18 +17,10 @@ public class Cliente {
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipoCliente=" + tipoCliente.getNomeRelatorio() +
-                ", tipoClienteInt=" + tipoCliente.getValor() +
+                ", tipoPessoa=" + tipoPessoa.getNOME_RELATORIO() +
+                ", tipoPessoaInt=" + tipoPessoa.getVALOR() +
                 ", tipoPagamento=" + tipoPagamento +
                 '}';
-    }
-
-    public TipoPagamento getTipoPagamento() {
-        return tipoPagamento;
-    }
-
-    public void setTipoPagamento(TipoPagamento tipoPagamento) {
-        this.tipoPagamento = tipoPagamento;
     }
 
     public String getNome() {
@@ -38,12 +31,19 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public TipoCliente getTipoCliente() {
-        return tipoCliente;
+    public TipoPessoa getTipoPessoa() {
+        return tipoPessoa;
     }
 
-    public void setTipoCliente(TipoCliente tipoCliente) {
-        this.tipoCliente = tipoCliente;
+    public void setTipoPessoa(TipoPessoa tipoPessoa) {
+        this.tipoPessoa = tipoPessoa;
     }
 
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
+    }
 }

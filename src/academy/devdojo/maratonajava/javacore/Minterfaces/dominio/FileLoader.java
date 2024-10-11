@@ -1,20 +1,18 @@
 package academy.devdojo.maratonajava.javacore.Minterfaces.dominio;
 
-import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.DataLoader;
-
-public class FileLoader implements DataLoader, DataRemover {
+public class FileLoader implements DataLoader, DataRemover{
     @Override
-    public void loader() {
-        System.out.println("Carregando dados de um arquivo");
+    public void load() {
+        System.out.println("Carregando arquivos...");
     }
 
     @Override
     public void remove() {
-        System.out.println("Removendo dados de um arquivo");
+        System.out.println("Removendo arquivos...");
     }
 
     @Override
     public void checkPermission() {
-        System.out.println("Chegando permissões no arquivo");
+        System.out.println("Checando permissão do arquivo...");
     }
 }
