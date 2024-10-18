@@ -9,6 +9,15 @@ public class WrapperTest01 {
         float floatP = 1F;
         double doubleP =  1.1;
         char charP = 'a';
-        boolean boolP = true;
+        boolean boolP = true;        
+        
+        Byte byteW = 1;
+        Short shortW = 1;
+        Integer intW = 1;
+        Long longW = 1L;
+        Float floatW = 1F;
+        Double doubleW =  1.1;
+        Character charW = 'a';
+        Boolean boolW = true;
     }
 }
