@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
+// Classe voltada para medição e definição de tempo;
+
 public class DurationTest01 {
     public static void main(String[] args) {
         LocalDateTime now = LocalDateTime.now();

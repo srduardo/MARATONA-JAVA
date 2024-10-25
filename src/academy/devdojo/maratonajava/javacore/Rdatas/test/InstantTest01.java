@@ -3,6 +3,8 @@ package academy.devdojo.maratonajava.javacore.Rdatas.test;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
+// Nanossegundos
+
 public class InstantTest01 {
     public static void main(String[] args) {
         Instant now = Instant.now();

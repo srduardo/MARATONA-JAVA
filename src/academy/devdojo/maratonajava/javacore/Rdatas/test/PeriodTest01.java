@@ -2,6 +2,9 @@ package academy.devdojo.maratonajava.javacore.Rdatas.test;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
+
+// Classe voltada para medição e definição de tempo entre datas;
 
 public class PeriodTest01 {
     public static void main(String[] args) {
@@ -13,7 +16,10 @@ public class PeriodTest01 {
         System.out.println(Period.between(now, nowAfter2Years));
         System.out.println(Period.ofYears(7));
         System.out.println(Period.ofMonths(5));
-        System.out.println(Period.ofWeeks(20));
+        int p = Period.ofWeeks(200).getDays();
+        System.out.println(p);
         System.out.println(Period.ofDays(367));
+        System.out.println(Period.between(now, now.plusDays(p)).getMonths());
+        System.out.println(now.until(now.plusDays(p), ChronoUnit.MONTHS));
     }
 }
