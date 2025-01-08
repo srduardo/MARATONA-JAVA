@@ -30,4 +30,20 @@ public class Planeta {
 
         return nome != null && nome.equals(planeta.getNome());
     }
+
+    // se x.equals(y) == true, então y.hashCode() == x.hashCode()
+    // se y.hashCode() == x.hashCode(), não necessariamente será x.equals(y)
+    // se y.hashCode() != x.hashCode(), então x.equals(y) == false
+    // o hashCode deve sempre trabalhar em sincronia com o equals
+    @Override
+    public int hashCode() {
+        return this.nome == null ? 0 : this.nome.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Planeta{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
 }
