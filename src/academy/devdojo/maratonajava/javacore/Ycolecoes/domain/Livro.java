@@ -6,6 +6,7 @@ public class Livro implements Comparable<Livro> {
     private Long id;
     private String nome;
     private double preco;
+    private Integer quantidade;
 
     public Livro(Long id, String nome, double preco) {
         Objects.requireNonNull(id);
@@ -15,17 +16,22 @@ public class Livro implements Comparable<Livro> {
         this.preco = preco;
     }
 
+    public Livro(Long id, String nome, double preco, Integer quantidade) {
+        this(id, nome, preco);
+        this.quantidade = quantidade;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Livro livro = (Livro) o;
-        return Objects.equals(id, livro.id) && Objects.equals(nome, livro.nome) && Objects.equals(preco, livro.preco);
+        return Objects.equals(id, livro.id) && Objects.equals(nome, livro.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
     }
 
     @Override
@@ -34,7 +40,16 @@ public class Livro implements Comparable<Livro> {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
     }
 
     public Long getId() {
