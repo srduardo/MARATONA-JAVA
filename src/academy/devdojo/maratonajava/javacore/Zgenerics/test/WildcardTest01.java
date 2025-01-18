@@ -23,7 +23,7 @@ class Gato extends Animal {
 public class WildcardTest01 {
     public static void main(String[] args) {
         Cachorro[] cachorros = {new Cachorro(), new Cachorro()};
-        Gato[] gatoes = {new Gato(), new Gato()};
+        Gato[] gatos = {new Gato(), new Gato()};
 
         printConsultas(cachorros);
     }
