@@ -9,11 +9,11 @@ public class LambdaTest02 {
         List<String> nomes = List.of("Eduardo", "Sofia", "Augusto", "Kauane");
         List<Integer> integers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-        System.out.println(map(nomes, n -> n.length()));
+        System.out.println(map(nomes, String::length));
         System.out.println(map(integers, integer -> integer * 2));
     }
 
-    public static <R, T> List<R> map(List<T> list, Function<T, R> function) { // Recebe um tipo e retorna outro
+    public static <R, T> List<R> map(List<T> list, Function<T, R> function) { // Recebe um valor e retorna outro
         List<R> result = new ArrayList<>();
         for (T t : list) {
             R apply = function.apply(t);
