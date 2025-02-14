@@ -24,8 +24,10 @@ public class StreamsTest03 {
 
         Stream<Streamer> stream = list.stream();
 
+        // Quando uma variavel stream é encerrada, ela não pode ser trabalhada novamente.
         long count = stream.filter(streamer -> streamer.getViwers() <= 16000).count();
         System.out.println(count);
+        // A menos que o novo processo se inicie pela sua fonte original.
         long count1 = list.stream().filter(streamer -> streamer.getViwers() <= 16000).distinct().count();
         System.out.println(count1);
 
