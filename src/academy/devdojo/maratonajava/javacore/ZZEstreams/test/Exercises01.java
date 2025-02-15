@@ -1,10 +1,8 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Exercises {
+public class Exercises01 {
     public static void main(String[] args) {
         System.out.println("---> Filtrar números pares:");
         List<Integer> oddList = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
