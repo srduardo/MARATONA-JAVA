@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.ZZEstreams.domain;
+package academy.devdojo.maratonajava.javacore.ZZEstreams.first_domain;
 
 import java.util.Objects;
 

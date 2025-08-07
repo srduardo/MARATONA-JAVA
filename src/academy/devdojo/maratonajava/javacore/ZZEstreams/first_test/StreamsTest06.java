@@ -1,12 +1,11 @@
 
-package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
+package academy.devdojo.maratonajava.javacore.ZZEstreams.first_test;
 
-    import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Streamer;
+    import academy.devdojo.maratonajava.javacore.ZZEstreams.first_domain.Streamer;
 
     import java.util.ArrayList;
     import java.util.Comparator;
     import java.util.List;
-    import java.util.stream.Stream;
 
 public class StreamsTest06 {
         private static List<Streamer> list = new ArrayList<>(List.of(

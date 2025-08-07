@@ -1,10 +1,9 @@
-package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
+package academy.devdojo.maratonajava.javacore.ZZEstreams.first_test;
 
-import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Cliente;
-import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Produto;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.first_domain.Cliente;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.first_domain.Produto;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;

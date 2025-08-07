@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
+package academy.devdojo.maratonajava.javacore.ZZEstreams.first_test;
 
-import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.Streamer;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.first_domain.Streamer;
 
 import java.util.ArrayList;
 import java.util.Comparator;
